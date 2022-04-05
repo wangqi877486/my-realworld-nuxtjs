@@ -54,6 +54,14 @@ export const getArticles = params => {
     })
   }
 
+  export const addComments = (slug, data) => {
+    return request({
+      method: 'POST',
+      url: `/api/articles/${slug}/comments`,
+      data
+    })
+  }
+
   // 新建文章
   export const createArticle = data => {
     return request({

@@ -82,7 +82,6 @@ export default {
                 const { data } = await updateUser({
                     user: this.user
                 })
-                this.$message
             } catch (err) {
 
             }
